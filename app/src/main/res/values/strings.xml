@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Restaurants</string>
+    <string name="empty_title">Reviewing are empty now!</string>
+    <string name="empty_sub_title">Need a review, Thank you</string>
+
+    <string name="editor_activity_title_new_item">Add new item</string>
+    <string name="editor_activity_title_edit_item">Edit item</string>
+
+    <string name="unsaved_changes_dialog_msg">There are unsaved changes in the review information. Do you want to continue?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+
+    <string name="delete_message">Are you sure you want to proceed with the deletion?</string>
+    <string name="delete">Accept</string>
+    <string name="cancel">Cancel</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/userID_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserID"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userID_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/restaurant_name_edit" />
+
+        <TextView
+            android:id="@+id/restaurant_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant name"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/restaurant_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/location_edit" />
+
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/location_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/price_edit" />
+
+        <TextView
+            android:id="@+id/price_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/price_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/rating_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageButton
+                android:id="@+id/decrease_rating"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_remove_black_24dp" />
+
+            <EditText
+                android:id="@+id/rating_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <ImageButton
+                android:id="@+id/increase_rating"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select image"/>
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>
